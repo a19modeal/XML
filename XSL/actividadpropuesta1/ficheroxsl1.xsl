@@ -14,15 +14,20 @@
     </head>
     <body>
     <h2>My CD Collection</h2>
+    <h3>Bob Dylan</h3>
     <table>
       <tr >
         <th>Title</th>
         <th>Artist</th>
+        <th>Price</th>
+        <th>Year</th>
       </tr>
       <xsl:for-each select="//cd[artist='Bob Dylan']">
         <tr>
           <td><xsl:value-of select="title"/></td>
-          <td><xsl:value-of select="artist"/></td>
+          <td><xsl:value-of select="company"/></td>
+          <td><xsl:value-of select="price"/></td>
+          <td><xsl:value-of select="year"/></td>
         </tr>
       </xsl:for-each>
     </table>
